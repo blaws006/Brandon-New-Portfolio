@@ -15,12 +15,12 @@ $(document).ready(function(){
      indicators: true
    });
   
-  $('#port-btn').on("click", function () {
+  $('#port-btn').on('click', function () {
     $('.carousel').carousel('next');
   });
 
-   $('#port-btn').on("touchstart", function () {
-     $('.carousel').carousel('next');
+   $('#port-btn').on('touchstart', function () {
+     $(".carousel").carousel("next");
    });
 });
 
