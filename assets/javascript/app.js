@@ -14,5 +14,9 @@ $(document).ready(function(){
      fullWidth: true,
      indicators: true
    });
+  
+  $('.port-btn').on("click", function(){
+    $('.carousel').carousel('next');
+  });
 });
 
