@@ -16,10 +16,12 @@ $(document).ready(function(){
    });
   
   $('#port-btn').on('click', function () {
+       alert("touched");
     $('.carousel.carousel-slider').carousel('next');
   });
 
    $('#port-btn').on('touchstart', function () {
+     alert("touched");
      $('.carousel.carousel-slider').carousel('next');
    });
 });
