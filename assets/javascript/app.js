@@ -16,11 +16,11 @@ $(document).ready(function(){
    });
   
   $('#port-btn').on('click', function () {
-    $('.carousel').carousel('next');
+    $('.carousel.carousel-slider').carousel('next');
   });
 
    $('#port-btn').on('touchstart', function () {
-     $('.carousel').carousel('next');
+     $('.carousel.carousel-slider').carousel('next');
    });
 });
 
