@@ -15,7 +15,7 @@ $(document).ready(function(){
      indicators: true
    });
   
-  $('.port-btn').on("click", function(){
+  $('.port-btn').on("click touchstart", function () {
     $('.carousel').carousel('next');
   });
 });
