@@ -20,7 +20,7 @@ $(document).ready(function(){
   });
 
    $('#port-btn').on('touchstart', function () {
-     $(".carousel").carousel("next");
+     $('.carousel').carousel('next');
    });
 });
 
