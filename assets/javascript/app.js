@@ -3,11 +3,16 @@ $(document).ready(function(){
   $('.parallax').parallax();
   
    var options = [
-      {selector: '#staggered-test', offset: 800, callback: function(el) {
+      {selector: '#staggered-test', offset: 400, callback: function(el) {
         Materialize.showStaggeredList($(el));
       } }
     ];
   
    Materialize.scrollFire(options);
+
+   $('.carousel.carousel-slider').carousel({
+     fullWidth: true,
+     indicators: true
+   });
 });
 
