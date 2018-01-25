@@ -13,10 +13,11 @@ $(document).ready(function () {
 
   Materialize.scrollFire(options);
 
-  $('.carousel.carousel-slider').carousel({
+  $(function(){ $('.carousel.carousel-slider').carousel({
     fullWidth: true,
     indicators: false,
-  });
+  }); 
+});
 
 
   //Smooth Scroll
