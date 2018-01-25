@@ -13,9 +13,12 @@ $(document).ready(function () {
 
   Materialize.scrollFire(options);
 
-$('.carousel.carousel-slider').carousel('next');
-  
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
 
+  
   //Smooth Scroll
   function scrollNav() {
     $("#nav a").not('#not').click(function () {
