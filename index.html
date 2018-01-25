@@ -14,20 +14,26 @@
 
 <body>
 
-	<nav>
+	<nav id="nav">
 		<div class="nav-wrapper teal darken-1">
 			<a href="#" class="brand-logo center">
 				<img class="circle profileImg" src="assets/images/Brandon-Lawson.jpg">
 			</a>
 			<ul id="nav-mobile" class="left hide-on-med-and-down">
 				<li>
-					<a class="index">About</a>
+					<a class="index" href="#home">Home</a>
 				</li>
 				<li>
-					<a class="portfolio">Portfolio</a>
+					<a class="about" href="#about">About</a>
 				</li>
 				<li>
-					<a class="contact">Contact</a>
+					<a class="skill" href="#skills">Skills</a>
+				</li>
+				<li>
+					<a class="portfolio" href="#portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a id="not" onclick="$('.tap-target').tapTarget('open')">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -46,12 +52,12 @@
 		</div>
 	</div>
 	<div class="row teal darken-1 aboutMeTitle">
-		<div class="col s12 center-align">
+		<div class="col s12 center-align scrollspy">
 			<h2>About Me</h2>
 		</div>
 	</div>
 	<div class="container">
-		<div class="row aboutMe">
+		<div class="row aboutMe" id="about">
 			<div class="col s12 m12 l4 center-align">
 				<h3>Summary</h3>
 				<p>Highly-motivated Certified Full Stack web developer and Email Marketing Specialist with a passion for problem-solving
@@ -110,8 +116,8 @@
 		<div class="parallax">
 			<img src="assets/images/7501146568_7e35fe489f_b.jpg">
 			<div class="container">
-				<div class="row skills">
-					<div class="col s12">
+				<div class="row skills scrollspy">
+					<div class="col s12" id="skills">
 						<h3 class="center-align">Skills</h3>
 						<ul id="staggered-test" class="left-align">
 							<li>
@@ -180,8 +186,8 @@
 		</div>
 
 	</div>
-	<div class="row teal darken-1 aboutMeTitle">
-		<div class="col s12 center-align">
+	<div class="row teal darken-1 aboutMeTitle scrollspy">
+		<div class="col s12 center-align" id="portfolio">
 			<h2>Portfolio</h2>
 		</div>
 	</div>
@@ -210,6 +216,23 @@
 					<p class="white-text">This is your fourth panel</p>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+		<a id="menu" class="waves-effect waves-light btn btn-floating">
+			<i class="material-icons">menu</i>
+		</a>
+	</div>
+	<!-- Tap Target Structure -->
+	<div class="tap-target teal darken-3" data-activates="menu">
+		<div class="tap-target-content white-text">
+			<h5>Contact Info:</h5>
+			<p>Phone:
+				<a class="white-text" href="tel:7035983362">+1 703.598.3362</a>
+			</p>
+			<p>Email:
+				<a class="white-text" href="mailto:blaws006@gmail.com">blaws006@gmail.com</a>
+			</p>
 		</div>
 	</div>
 	<footer class="page-footer teal darken-1">
