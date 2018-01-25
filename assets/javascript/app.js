@@ -30,8 +30,8 @@ $(document).ready(function () {
       $('.' + theClass).parent('li').addClass('active');
       //Animate
       $('html, body').stop().animate({
-        scrollTop: $($(this).attr('href')).offset().top - 200
-      }, 800);
+        scrollTop: $($(this).attr('href')).offset().top - 0
+      }, 1000);
       return false;
     });
     $('.scrollTop a').scrollTop();
