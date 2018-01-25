@@ -13,15 +13,14 @@
 </head>
 
 <body>
-
 	<nav id="nav">
 		<div class="nav-wrapper teal darken-1">
 			<a href="#" class="brand-logo center">
 				<img class="circle profileImg" src="assets/images/Brandon-Lawson.jpg">
 			</a>
 			<ul id="nav-mobile" class="left hide-on-med-and-down">
-				<li>
-					<a class="index" href="#home">Home</a>
+				<li class="active">
+					<a class="nav-section1" href="#home">Home</a>
 				</li>
 				<li>
 					<a class="about" href="#about">About</a>
@@ -36,9 +35,46 @@
 					<a id="not" onclick="$('.tap-target').tapTarget('open')">Contact</a>
 				</li>
 			</ul>
+			<ul id="slide-out" class="side-nav">
+				<li>
+					<div class="user-view">
+						<div class="background">
+							<img src="./assets/images/light_bulb.jpg">
+						</div>
+						<a href="#">
+							<img class="circle" src="./assets/images/Brandon-Lawson.jpg">
+						</a>
+						<a href="#!name">
+							<span class="white-text name">Brandon Lawson</span>
+						</a>
+						<a href="#!email">
+							<span class="white-text email">blaws006@gmail.com</span>
+						</a>
+					</div>
+				</li>
+				<li>
+					<a class="home" href="#home">Home</a>
+				</li>
+				<li>
+					<a class="about" href="#about">About</a>
+				</li>
+				<li>
+					<a class="skill" href="#skills">Skills</a>
+				</li>
+				<li>
+					<a class="portfolio" href="#portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a id="not" onclick="$('.tap-target').tapTarget('open')">Contact</a>
+				</li>
+			</ul>
+			<a href="#" data-activates="slide-out" class="button-collapse">
+				<i class="material-icons">menu</i>
+			</a>
 		</div>
 	</nav>
-	<div>
+
+	<div id="home">
 		<div class="parallax-container">
 			<div class="parallax">
 				<img src="assets/images/header_background.jpg">
@@ -197,24 +233,42 @@
 				<div class="carousel-fixed-item center">
 					<a id="port-btn" class="btn waves-effect white grey-text darken-text-2 hide-on-med-and-down" onclick="$('.carousel.carousel-slider').carousel('next')">Next</a>
 				</div>
-				<div class="carousel-item teal darken-3 white-text" href="#one!">
-					<h2>GifTastic</h2>
-					<p class="white-text">Use GIPHY's API to Load GIFs of Your Favorite subject</p>
-					<img src="https://media.giphy.com/media/3ohhweiVB36rAlqVCE/giphy.gif">
+				<a href="https://blaws006.github.io/GifTastic/" target="_blank">
+					<div class="carousel-item teal darken-3 white-text" href="#one!">
+						<h2>GifTastic</h2>
+						<p class="white-text">Use GIPHY's API to Load GIFs of Your Favorite Subject</p>
+						<img src="https://media.giphy.com/media/YxwAwiJEqEoFi/giphy.gif">
 
-				</div>
-				<div class="carousel-item teal darken-3 white-text" href="#two!">
-					<h2>Second Panel</h2>
-					<p class="white-text">This is your second panel</p>
-				</div>
-				<div class="carousel-item teal darken-3 white-text" href="#three!">
-					<h2>Third Panel</h2>
-					<p class="white-text">This is your third panel</p>
-				</div>
-				<div class="carousel-item teal darken-3 white-text" href="#four!">
-					<h2>Fourth Panel</h2>
-					<p class="white-text">This is your fourth panel</p>
-				</div>
+					</div>
+				</a>
+				<a href="https://blooming-mesa-47735.herokuapp.com/" target="_blank">
+					<div class="carousel-item teal darken-3 white-text" href="#two!">
+						<h2>Friend Finder</h2>
+						<p class="white-text">Take a Survey and Let Sweet Algorithms Find Your Best Friend</p>
+						<img src="https://media.giphy.com/media/wrzf9P70YWLJK/giphy.gif">
+					</div>
+				</a>
+				<a href="https://calm-harbor-93557.herokuapp.com/" target="_blank">
+					<div class="carousel-item teal darken-3 white-text" href="#three!">
+						<h2>B-Law's Burger</h2>
+						<p class="white-text">Create a Burger, Eat a Burger and Know That All Burgers are Stored in a SQL Database</p>
+						<img src="https://media.giphy.com/media/WyVWNxwIs154Y/giphy.gif">
+					</div>
+				</a>
+				<a href="https://calm-harbor-93557.herokuapp.com/" target="_blank">
+					<div class="carousel-item teal darken-3 white-text" href="#four!">
+						<h2>B-Law's Train Time</h2>
+						<p class="white-text">Schedule a Through the Power of Firebase and jQuery</p>
+						<img src="https://media.giphy.com/media/qwXlZpDtvzR72/giphy.gif">
+					</div>
+				</a>
+				<a href="https://blaws006.github.io/train-scheduler/" target="_blank">
+					<div class="carousel-item teal darken-3 white-text" href="#five!">
+						<h2>TriviaGame</h2>
+						<p class="white-text">Answer a Few Questions, but You're on the Clock!</p>
+						<img src="https://media.giphy.com/media/GJLUvdxlRT9xC/giphy.gif">
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
