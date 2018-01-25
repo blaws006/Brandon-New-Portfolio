@@ -2,8 +2,6 @@ $(document).ready(function () {
   console.log("Connected")
   $('.parallax').parallax();
 
-  
-
 
   var options = [{
     selector: '#staggered-test',
@@ -15,15 +13,8 @@ $(document).ready(function () {
 
   Materialize.scrollFire(options);
 
-  $('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true
-  });
-
-  $('#port-btn').on('click', function () {
-
-    $('.carousel.carousel-slider').carousel('next');
-  });
+$('.carousel.carousel-slider').carousel('next');
+  
 
   //Smooth Scroll
   function scrollNav() {
