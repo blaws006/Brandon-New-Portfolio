@@ -2,83 +2,93 @@
 <html lang="en">
 
 <head>
+	<title>Brandon Lawson's Porfolio</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection">
+	<link rel="stylesheet" href="./assets/css/style.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
-	<title>Brandon Lawson's Porfolio</title>
 </head>
 
 <body>
+	<header>
+		<div class="nav-fixed">
+			<nav id="nav">
+				<div class="nav-wrapper teal darken-1">
+					<a href="#" class="brand-logo right">
+						<h5>Brandon Lawson</h5>
+					</a>
+					<a href="#" data-activates="slide-out" class="button-collapse">
+						<i class="material-icons">menu</i>
+					</a>
+					<ul id="nav-mobile" class="left hide-on-med-and-down">
+						<li class="active">
+							<a class="nav-section1" href="#home">Home</a>
+						</li>
+						<li>
+							<a class="about" href="#about">About</a>
+						</li>
+						<li>
+							<a class="skill" href="#skills">Skills</a>
+						</li>
+						<li>
+							<a class="portfolio" href="#portfolio">Portfolio</a>
+						</li>
+						<li>
+							<a class="contact" href="#contact">Contact</a>
+						</li>
+						<li>
+							<a class="gift not" href="./assets/resume/BrandonLawsonResume.pdf" download onclick="$('.tap-target').tapTarget('open')">Free Promotional Gift!</a>
+						</li>
+					</ul>
 
-	<nav id="nav">
-		<div class="nav-wrapper teal darken-1">
-			<a href="#" class="brand-logo right">
-				<h5>Brandon Lawson</h5>
-			</a>
-			<ul id="nav-mobile" class="left hide-on-med-and-down">
-				<li class="active">
-					<a class="nav-section1" href="#home">Home</a>
-				</li>
-				<li>
-					<a class="about" href="#about">About</a>
-				</li>
-				<li>
-					<a class="skill" href="#skills">Skills</a>
-				</li>
-				<li>
-					<a class="portfolio" href="#portfolio">Portfolio</a>
-				</li>
-				<li>
-					<a id="not" onclick="$('.tap-target').tapTarget('open')">Contact</a>
-				</li>
-			</ul>
-			<ul id="slide-out" class="side-nav">
-				<li>
-					<div class="user-view">
-						<div class="background">
-							<img src="./assets/images/light_bulb.jpg">
-						</div>
-						<a href="#">
-							<img class="circle" src="./assets/images/Brandon-Lawson.jpg">
-						</a>
-						<a href="#!name">
-							<span class="white-text name">Brandon Lawson</span>
-						</a>
-						<a href="#!email">
-							<span class="white-text email">blaws006@gmail.com</span>
-						</a>
-					</div>
-				</li>
-				<li>
-					<a class="home" href="#home">Home</a>
-				</li>
-				<li>
-					<a class="about" href="#about">About</a>
-				</li>
-				<li>
-					<a class="skill" href="#skills">Skills</a>
-				</li>
-				<li>
-					<a class="portfolio" href="#portfolio">Portfolio</a>
-				</li>
-				<li>
-					<a id="not" onclick="$('.tap-target').tapTarget('open')">Contact</a>
-				</li>
-			</ul>
-			<a href="#" data-activates="slide-out" class="button-collapse">
-				<i class="material-icons">menu</i>
-			</a>
+				</div>
+
+			</nav>
 		</div>
+		<ul id="slide-out" class="side-nav">
+			<li>
+				<div class="user-view">
+					<div class="background">
+						<img src="./assets/images/light_bulb.jpg">
+					</div>
+					<a href="#">
+						<img class="circle" src="./assets/images/Brandon-Lawson.jpg">
+					</a>
+					<a href="#!name">
+						<span class="white-text name">Brandon Lawson</span>
+					</a>
+					<a href="#!email">
+						<span class="white-text email">blaws006@gmail.com</span>
+					</a>
+				</div>
+			</li>
+			<li>
+				<a class="home scroll-side" href="#home">Home</a>
+			</li>
+			<li>
+				<a class="about scroll-side" href="#about">About</a>
+			</li>
+			<li>
+				<a class="skill scroll-side" href="#skills">Skills</a>
+			</li>
+			<li>
+				<a class="portfolio scroll-side" href="#portfolio">Portfolio</a>
+			</li>
+			<li>
+				<a class="contact scroll-side" href="#contact">Contact</a>
+			</li>
+			<li>
+				<a class="gift not" href="./assets/resume/BrandonLawsonResume.pdf" download onclick="$('.tap-target').tapTarget('open')">Free Promotional Gift!</a>
+			</li>
+		</ul>
+	</header>
 
-	</nav>
 	<div id="home">
 		<div class="parallax-container">
 			<div class="parallax">
-				<img src="assets/images/header_background.jpg">
+				<img src="assets/images/pexels-photo-177598.jpeg">
 				<div class="profileName">
 
 					<h1>Brandon Lawson</h1>
@@ -151,7 +161,7 @@
 	</div>
 	<div class="parallax-container skillsContainer">
 		<div class="parallax">
-			<img src="assets/images/7501146568_7e35fe489f_b.jpg">
+			<img src="assets/images/pexels-photo-177598.jpeg">
 			<div class="container">
 				<div class="row skills scrollspy">
 					<div class="col s12" id="skills">
@@ -203,7 +213,7 @@
 								<h5>Express</h5>
 								<div class="arrow">
 									<div class="arrow-status express">
-										20%
+										80%
 									</div>
 								</div>
 							</li>
@@ -281,13 +291,10 @@
 	<!-- Tap Target Structure -->
 	<div class="tap-target teal darken-3" data-activates="menu">
 		<div class="tap-target-content white-text">
-			<h5>Contact Info:</h5>
-			<p>Phone:
-				<a class="white-text" href="tel:7035983362">+1 703.598.3362</a>
+			<h5>Thank You For Visiting My Site</h5>
+			<p>Please take a free copy of my resume 😉
 			</p>
-			<p>Email:
-				<a class="white-text" href="mailto:blaws006@gmail.com">blaws006@gmail.com</a>
-			</p>
+
 		</div>
 	</div>
 	<footer class="page-footer teal darken-1">
@@ -297,7 +304,7 @@
 					<h5 class="white-text">Brandon Lawson</h5>
 
 				</div>
-				<div class="col l4 offset-l2 s12">
+				<div id="contact" class="col l4 offset-l2 s12">
 					<h5 class="white-text">Contact Me</h5>
 					<ul>
 						<li>
@@ -331,8 +338,10 @@
 			</div>
 		</div>
 	</footer>
-	<script src="./assets/javascript/app.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="./assets/javascript/app.js"></script>
+
 </body>
 
 </html>

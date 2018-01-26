@@ -22,7 +22,7 @@ $(document).ready(function () {
 
   //Smooth Scroll
   function scrollNav() {
-    $("#nav a").not('#not').not(".button-collapse").click(function () {
+    $("#nav a, .scroll-side").not('.not').not(".button-collapse").click(function () {
       //Toggle Class
       $(".active").removeClass("active");
       $(this).closest('li').addClass("active");
@@ -30,7 +30,7 @@ $(document).ready(function () {
       $('.' + theClass).parent('li').addClass('active');
       //Animate
       $('html, body').stop().animate({
-        scrollTop: $($(this).attr('href')).offset().top - 0
+        scrollTop: $($(this).attr('href')).offset().top - 160
       }, 1000);
       return false;
     });
