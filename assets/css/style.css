@@ -2,12 +2,6 @@
 p {
  line-height: 1.6em;
 }
-.parallax {
-
-    background-size: cover;
-  height: auto;
-  
-}
 
 /*****************************
 NAVIGATION
@@ -40,7 +34,7 @@ PARALLAX
 *****************************/
 .parallaxBg {
     /* The image and gradient */
-   background: linear-gradient(black, rgba(0, 0, 0, 0.2)),
+   background: linear-gradient(black, rgba(0, 0, 0, 0)),
    url("../images/pexels-photo-177598_2.png");
     /* Set a specific height */
     height: 600px;
