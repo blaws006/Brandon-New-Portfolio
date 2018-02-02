@@ -1,5 +1,7 @@
 
-
+p, li {
+ line-height: 1.6em;
+}
 .parallax {
 
     background-size: cover;
@@ -34,6 +36,22 @@ TITLE SECTION
 }
 
 /*****************************
+PARALLAX
+*****************************/
+.parallaxBg {
+    /* The image and gradient */
+   background: linear-gradient(black, rgba(0, 0, 0, 0.2)),
+   url("../images/pexels-photo-177598_2.png");
+    /* Set a specific height */
+    height: 600px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*****************************
 ABOUT ME
 *****************************/
 
@@ -41,7 +59,7 @@ ABOUT ME
   color: #ffffff;
 }
 .aboutMe {
- background-image: url("")
+line-height: 1.5;
 }
 
 
@@ -49,7 +67,7 @@ ABOUT ME
 SKILLS SECTION
 *****************************/
 .skillsContainer {
-  height: 700px;
+  height:700px;
 }
 .skills {
   position: relative;
@@ -66,9 +84,9 @@ ARROWS
 .arrow {
     position: relative;
     width: 100%;
-    border: 5px solid #666;
     border-radius: 2px;
     height: 2em;
+    background-color: rgba(58, 166, 208, 0.5)
 }
 
 .arrow-status {
@@ -135,6 +153,17 @@ ARROWS
 CONTACT
 *****************************/
 
+.contactList {
+    float: left;
+}
 .contactIcon {
     width: 50px;
+}
+
+.gitHub a {
+    color: #ffffff
+}
+
+.linkedIn a {
+    color: #ffffff
 }
