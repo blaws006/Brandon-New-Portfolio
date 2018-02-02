@@ -32,7 +32,9 @@ TITLE SECTION
 /*****************************
 PARALLAX
 *****************************/
-
+.homeContainer {
+  height: 600px
+}
 /*****************************
 ABOUT ME
 *****************************/
@@ -45,6 +47,12 @@ line-height: 1.5;
 }
 .ask li{
     line-height: 1.7em;
+}
+
+
+.contactAbout li {
+  float: left;
+  
 }
 
 /*****************************
