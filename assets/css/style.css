@@ -38,6 +38,7 @@ PARALLAX
    url("../images/pexels-photo-177598_2.png");
     /* Set a specific height */
     height: 600px;
+    width: 100%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
