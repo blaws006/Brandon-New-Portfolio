@@ -32,19 +32,6 @@ TITLE SECTION
 /*****************************
 PARALLAX
 *****************************/
-.parallaxBg {
-    /* The image and gradient */
-   background: linear-gradient(black, rgba(0, 0, 0, 0)),
-   url("../images/pexels-photo-177598_2.png");
-    /* Set a specific height */
-    height: 600px;
-    width: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /*****************************
 ABOUT ME
